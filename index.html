@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <title>Testovoe</title>
+    <link href="./reset.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
+    <link href="./burger.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            
+            <img src="./LoremIpsum.Net.svg"/>
+            
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__links">
+                <a class="header__link">Бизнес</a>
+                <a class="header__link">О нас</a>
+                <a class="header__link">Цены</a>
+                <a class="header__link">Оформить заказ</a>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero__main container">
+            <h2>Lorem ipsum dolor sit amet
+                consectetur adipiscing</h2>
+            <ul>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus!
+                </p>
+                <li>
+                    - Totam rem aperiam eaque ipsa
+                </li>
+                <li>
+                    - Sit voluptatem accusantium doloremque laudantium
+                </li>
+                <li>
+                    - Sed ut perspiciatis, unde omnis iste natus error
+                </li>
+            </ul>
+            </p>
+            <div class="hero__main-buttons">
+                <button class="default-button colored">
+                    Заказать
+                </button>
+                <button class="default-button">
+                    Подробнее
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <div class="order__main container">
+            <h2 class="order__main-title">Оформление Заказа</h2>
+            <p class="order__main-text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            <div class="order__circles">
+                <div class="order__circles-item">
+                    <img src="./glass.svg" class="order__circles-img" />
+                    <p>Lorem ipsum dolorsit amet</p>
+                </div>
+                <div class="order__circles-item">
+                    <img src="./glass.svg" class="order__circles-img" />
+                    <p>Lorem ipsum dolorsit amet</p>
+                </div>
+                <div class="order__circles-item">
+                    <img src="./glass.svg" class="order__circles-img" />
+                    <p>Lorem ipsum dolorsit amet</p>
+                </div>
+                <div class="order__circles-item">
+                    <img src="./glass.svg" class="order__circles-img" />
+                    <p>Lorem ipsum dolorsit amet</p>
+                </div>
+                <div class="order__circles-item">
+                    <img src="./glass.svg" class="order__circles-img" />
+                    <p>Lorem ipsum dolorsit amet</p>
+                </div>
+            </div>
+            <form onsubmit="preventDefault();"  class="order__form">
+                <div class="order__form-inputs">
+                    <span  class="order__form-select">
+                        <select>
+                            <option value="">Выберите тип системы</option>
+                            <option value="1">test</option>
+                            <option value="2">test22</option>
+                            <option value="3">tessssst</option>
+                        </select>
+                    </span>
+                    <input type="email" placeholder="Ваш e-mail"  class="order__form-input" required/>
+                    <input type="text" placeholder="Ваше имя"  class="order__form-input" required/>
+                    <div class="range" style="max-width: none; grid-column: span 2;">
+                        <div class="range__text">
+                            <span style="  white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                          ">Sed ut perspiciatis, unde omnis iste natus</span>
+                            <span id="rangeText">75%</span>
+                        </div>
+                        <input type="range" id="rangeInput" class="order__form-input"/>
+                    </div>
+                    <label class="order__form-input order__form-label" for="file">
+                        Прикрепить файл
+                    </label>
+                    <input id="file" type="file" placeholder="Ваше имя" style="display: none;" required/>
+                </div>
+                <button class="default-button colored" style="padding: 15px 120px; width: unset;">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+    <footer >
+        <div class="footer">
+            <div class="footer__rights">© 2018 «LoremIpsum.net» Все права защищены.</div>
+            <div class="footer__links">
+                <span>Qiwi wallet</span>
+                <span>Yandex Money</span>
+                <span>Web Money</span>
+            </div>
+            <div class="footer__links">
+                <a href="/">info@ipsum228.com</a>
+                <a href="/">Мы вконтакте</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+    let menuBtn = document.querySelector('.menu-btn');
+    let menu = document.querySelector('.header__links');
+    menuBtn.addEventListener('click', function(){
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle('active');
+    })
+</script>
+</body>
